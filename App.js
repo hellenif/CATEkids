@@ -1,12 +1,16 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {StatusBar} from 'expo-status-bar';
-
-
-import {View, Text, StyleSheet }from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {View, Text, StyleSheet, Image }from 'react-native';
 import Routes from './src/roter';
 import {css} from './assets/css/Css';
-import {index, ProfileScreen, SettingScreen} from './src/screens';
+import Home  from './src/pages/Detail/Home/index';
+import Sobre from './src/pages/Detail/Sobre/index';
+
+
+const Stack = createStackNavigator();
+
 
 
 export default function App(){
@@ -15,14 +19,45 @@ export default function App(){
   
   
   return (
-   // <View style = {css.container}>
-   <>
-  
-      <StatusBar style = "light" backgroundColor="#7ecbfa" translucent = {true}/>
-      <Routes/>
-      </>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName = "Home">
+        <Stack.Screen name ="Home" component = {Home}
+        options = {{
+          title: 'CATEkids',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          },
+          headerTitle:(
+           
+            <Image style = {{ height:50, backgroundColor: '#fff'}}
+            resizeMode = "contain"
+            source = {require('./src/assets/1.png')}
+          
+            />
+        
+          ),
 
-    //  </View>
+          headerTintColor: "#FFF"
+
+        }}
+        />
+        <Stack.Screen name ="Sobre" component = {Sobre}
+         options = {{
+           title:"CATEkids",
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          },
+          headerTitle: (
+            <Image resizeMode = "center" source= {require('./src/assets/9.png')}/>
+          )
+    
+
+         }}
+
+        />
+         </Stack.Navigator>
+    </NavigationContainer>
+
     
   );}
 

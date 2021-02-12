@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-native";
+import {Button, StyleSheet} from "react-native";
 
 
 const css = StyleSheet.create ({
@@ -21,10 +21,15 @@ const css = StyleSheet.create ({
       
 
    },
-   image:{
-       margin:-80
-      
+   button:{
+       borderRadius: 20,
+       borderWidth: 20,
+       color: 'green'
+
    }
+      
+   
+
     
 
   });
