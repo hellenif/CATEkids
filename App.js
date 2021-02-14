@@ -6,7 +6,10 @@ import {View, Text, StyleSheet, Image }from 'react-native';
 import Routes from './src/roter';
 import {css} from './assets/css/Css';
 import Home  from './src/pages/Detail/Home/index';
-import Sobre from './src/pages/Detail/Sobre/index';
+import Sobre from './src/pages/Detail/Sobre';
+
+
+
 
 
 const Stack = createStackNavigator();
@@ -15,9 +18,6 @@ const Stack = createStackNavigator();
 
 export default function App(){
  
-
-  
-  
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName = "Home">
@@ -43,18 +43,29 @@ export default function App(){
         />
         <Stack.Screen name ="Sobre" component = {Sobre}
          options = {{
-           title:"CATEkids",
+          title: 'CATEkids',
           headerStyle:{
             backgroundColor: "#87cefa"
           },
-          headerTitle: (
-            <Image resizeMode = "center" source= {require('./src/assets/9.png')}/>
+          headerTitle:(
+           
+            <Image style = {{ height:50, backgroundColor: '#fff'}}
+            resizeMode = "contain"
+            source = {require('./src/assets/1.png')}
+          
+            />
+        
           )
-    
-
          }}
-
         />
+          
+          
+       
+         
+          
+          
+        
+        
          </Stack.Navigator>
     </NavigationContainer>
 
