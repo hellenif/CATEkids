@@ -9,16 +9,16 @@ import {css} from './assets/css/Css';
 import Home  from './src/pages/Detail/Home/index';
 import Sobre from './src/pages/Detail/Sobre';
 import Pai from './src/pages/Detail/Pai';
+
 import Alma from './src/pages/Detail/Alma';
 import Ave from './src/pages/Detail/Ave';
-
-import Santo from './src/pages/Detail/Santo';
 import Ato from './src/pages/Detail/Ato';
 import Invocacao from './src/pages/Detail/Invocacao';
 import Credo from './src/pages/Detail/Credo';
 import Consagracao from './src/pages/Detail/Consagracao';
 import JogoPai from './src/pages/Detail/Pai/JogoPai';
 import Catequese from './src/pages/Detail/Catequese/index';
+import PaiJogo from './src/pages/Detail/Pai/PaiJogo';
 const Stack = createStackNavigator();
 
 
@@ -59,6 +59,7 @@ export default function App(){
         }}
         />
         <Stack.Screen name ="Catequese" component = {Catequese}
+          initialParams = {{acertos:0,erros:0}}
          options = {{
           title: 'CATEkids',
           headerStyle:{
@@ -89,8 +90,7 @@ export default function App(){
         <Stack.Screen name ="Ave" component = {Ave}
         />
         
-         <Stack.Screen name ="Santo" component = {Santo}
-        />
+        
          <Stack.Screen name ="Ato" component = {Ato}
         />
         <Stack.Screen name ="Invocacao" component = {Invocacao}
@@ -106,6 +106,7 @@ export default function App(){
               backgroundColor: "#87cefa"
             }
           }}
+        /><Stack.Screen name ="PaiJogo" component = {PaiJogo}
         />
         
         
