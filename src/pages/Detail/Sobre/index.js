@@ -10,7 +10,7 @@ export default function Sobre ({navigation}) {
         <View  >
         
         <Image
-           style = {{width:350, height: 375, marginLeft:40, marginTop:20, marginVertical: 30}}
+           style = {{width:350, height: 375, marginLeft:40, marginTop:30, marginVertical: 30}}
             source ={ require('./12.png')}
             /> 
             

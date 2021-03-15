@@ -19,6 +19,10 @@ import Consagracao from './src/pages/Detail/Consagracao';
 import JogoPai from './src/pages/Detail/Pai/JogoPai';
 import Catequese from './src/pages/Detail/Catequese/index';
 import PaiJogo from './src/pages/Detail/Pai/PaiJogo';
+import Quiz from './src/pages/Detail/Catequese/Quiz/index';
+import Certa from './src/pages/Detail/Certa';
+import Errada from './src/pages/Detail/Errada';
+import Cate from './src/pages/Detail/Cate/index';
 const Stack = createStackNavigator();
 
 
@@ -67,7 +71,15 @@ export default function App(){
           }
         }}
         />
-         
+         <Stack.Screen name ="Quiz" component = {Quiz}
+         options = {{
+          title: 'QUIZ',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
+        
         <Stack.Screen name ="Pai" component = {Pai}
           options = {{
             title: 'Pai nosso',
@@ -107,6 +119,39 @@ export default function App(){
             }
           }}
         /><Stack.Screen name ="PaiJogo" component = {PaiJogo}
+        options = {{
+          title: 'Pai Nosso',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
+        <Stack.Screen name ="Certa" component = {Certa}
+        initialParams = {{acertos:0,erros:0}}
+        options = {{
+          title: 'Pai Nosso',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
+        <Stack.Screen name ="Errada" component = {Errada}
+        initialParams = {{acertos:0,erros:0}}
+        options = {{
+          title: 'Pai Nosso',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
+         <Stack.Screen name ="Cate" component = {Cate}
+        initialParams = {{acertos:0,erros:0}}
+        options = {{
+          title: 'Cate',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
         />
         
         
