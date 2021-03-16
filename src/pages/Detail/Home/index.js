@@ -7,7 +7,8 @@ export default function  Home({navigation}) {
    
     return(
         <View style ={{flex:1, alignItems: 'center', justifyContent:"center"}} >
-            <Image style = {{flex:1, width:500,height:20, marginTop:-20, marginRight:20}}source ={ require('./7.png')}
+            <Image style = {{flex:1, width:500,height:20, marginTop:-20, marginRight:20}}
+            source ={ require('./7.png')}
             />
            
             

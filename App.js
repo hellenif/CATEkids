@@ -23,6 +23,7 @@ import Quiz from './src/pages/Detail/Catequese/Quiz/index';
 import Certa from './src/pages/Detail/Certa';
 import Errada from './src/pages/Detail/Errada';
 import Cate from './src/pages/Detail/Cate/index';
+import Nascimento from './src/pages/Detail/Cate/Nascimento/index';
 const Stack = createStackNavigator();
 
 
@@ -153,7 +154,15 @@ export default function App(){
           }
         }}
         />
+         <Stack.Screen name ="Nascimento" component = {Nascimento}
         
+        options = {{
+          title: 'Cate',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
         
 
           
