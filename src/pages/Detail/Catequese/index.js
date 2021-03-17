@@ -24,35 +24,39 @@ export default function  Catequese({navigation, route}) {
     return(
         <ScrollView>
         <View style ={{flex:1,borderBottomEndRadius:10, marginTop:470,   justifyContent:"center"}}>
-            <Image style = {{ width:400,height:300, marginTop:-500}}
+            <Image style = {{ width:400,height:350, marginTop:-480}}
             resizeMode = "contain" 
-            source = {require('./20.png')}/>
+            source = {require('./29.png')}/>
 
-        <View style ={{flex:1, marginTop:250, marginVertical:30}}>
-        <Text style= {{ fontSize:20}}> Onde Jesus nasceu? </Text>
+        <View style ={{flex:1, marginTop:-250}}>
+       <Image style = {{ resizeMode: "cover",
+                   height:'50%',
+                   width: '110%',
+                   marginTop:70,
+                   marginRight:-40, marginVertical:-90}} resizeMode = "contain" source = {require('./mae.png')} />
 
        
-        <View style ={{flex:1, paddingVertical:10, marginTop:10,   justifyContent:"center"}} >
+        <View style ={{flex:1, paddingVertical:10, marginTop:-105,marginVertical:-1,   justifyContent:"center"}} >
            
            
-            <Button
-           onPress={questaoErrada.bind(this)} title="Jerusalém"></Button>
-            <Button onPress={() => questaoCerta()} title="Belém" ></Button>
-            <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
-            <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+            <Button color= "#87cefa"
+           onPress={questaoErrada.bind(this)} title="Ana"></Button>
+            <Button color= "#31aefc" onPress={() => questaoCerta()} title="Maria" ></Button>
+            <Button color= "#3a9fde" onPress={questaoErrada.bind(this)} title="Isabel"></Button>
+            <Button onPress={questaoErrada.bind(this)} title="Tereza"></Button>
            
             
-            <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+            <View style ={{flex:1, marginTop:100, marginVertical:30}}></View>
             <Text style= {{ fontSize:20}}> Onde Jesus nasceu? </Text>
 
             <Button
-            onPress={() => questaoCerta()} title="Belém"></Button>
-            <Button onPress={questaoErrada.bind(this)} title="Jerusalém"></Button>
-            <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
-            <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+            onPress={() => questaoCerta()} title="Gabriel"></Button>
+            <Button onPress={questaoErrada.bind(this)} title="Rafael"></Button>
+            <Button onPress={questaoErrada.bind(this)} title="Miguel"></Button>
+            <Button onPress={questaoErrada.bind(this)} title="Daniel"></Button>
            
             <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
-            <Text style= {{ fontSize:20}}> Onde Jesus nasceu? </Text>
+        
 
             <Button
             onPress={() => questaoCerta()} title="juazeiro"></Button>

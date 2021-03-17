@@ -11,7 +11,7 @@ export default function  Certa({navigation, route}) {
         <View style ={{flex:1, marginTop:200,marginVertical:30, alignItems: 'center', justifyContent:"center"}} >
              <Text >Acertos:{acertos}</Text>
             <Text>Erros:{erros}</Text>
-            <View  style = {{marginTop: -450, width:400,height:300,  marginRight: 50}}>
+            <View  style = {{marginTop: -450, width:400,height:400,  marginRight: 50}}>
             <Animatable.Image
              style = {{marginTop: 40, width:400,height:300,marginVertical:30,  marginLeft:30 }}
              animation= "bounceInLeft"
