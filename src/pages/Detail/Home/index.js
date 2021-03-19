@@ -6,10 +6,11 @@ import FlatButton from './button';
 export default function  Home({navigation}) {
    
     return(
-        <View style ={{flex:1, alignItems: 'center', justifyContent:"center"}} >
-            <Image style = {{flex:1, width:500,height:20, marginTop:-20, marginRight:20}}
-            source ={ require('./7.png')}
+        <View style ={{flex:1, alignItems: 'center'}} >
+            <Image style = {{flex:1, width:"100%",height:"50%", marginTop:30, marginVertical:20}}
+            source ={ require('./jesus.png') }
             />
+            
            
             
             <View  >

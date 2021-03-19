@@ -24,6 +24,7 @@ import Certa from './src/pages/Detail/Certa';
 import Errada from './src/pages/Detail/Errada';
 import Cate from './src/pages/Detail/Cate/index';
 import Nascimento from './src/pages/Detail/Cate/Nascimento/index';
+import OracoesPai from './src/pages/Detail/Pai/OracoesPai/index';
 const Stack = createStackNavigator();
 
 
@@ -163,7 +164,15 @@ export default function App(){
           }
         }}
         />
+         <Stack.Screen name ="OracoesPai" component = {OracoesPai}
         
+        options = {{
+          title: 'Cate',
+          headerStyle:{
+            backgroundColor: "#87cefa"
+          }
+        }}
+        />
 
           
           

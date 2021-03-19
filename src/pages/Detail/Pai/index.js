@@ -68,7 +68,7 @@ export default function Pai ({navigation}) {
         <View style= {{marginLeft:150, borderRadius:30,paddingBottom:25, marginEnd:50, marginTop:25}}>
         <Button
             title = "Próximo"
-            onPress = {() => navigation.navigate('JogoPai')}
+            onPress = {() => navigation.navigate('OracoesPai')}
             
             />
         </View>
