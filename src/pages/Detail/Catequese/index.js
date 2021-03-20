@@ -33,7 +33,7 @@ export default function  Catequese({navigation, route}) {
         <View style ={{flex:1, marginTop:-250}}>
        <Image style = {{ resizeMode: "cover",
                    height:'15%',
-                   width: '100%',
+                   width: '100%',  
                    marginTop:90,
                    marginLeft:20, marginVertical:-500}} resizeMode = "contain" source = {require('./mae.png')} />
 
