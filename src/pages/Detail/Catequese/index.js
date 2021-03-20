@@ -1,6 +1,6 @@
 import { setStatusBarNetworkActivityIndicatorVisible } from 'expo-status-bar';
 import React from 'react';
-import {View, Text, Button, Image, Alert, StyleSheet, ScrollView} from 'react-native';
+import {View, Text, Button, Image, Alert, StyleSheet,TouchableOpacity, ScrollView} from 'react-native';
 
 import { css } from '../../../../assets/css/Css';
 
@@ -24,20 +24,26 @@ export default function  Catequese({navigation, route}) {
     return(
         <ScrollView>
         <View style ={{flex:1,borderBottomEndRadius:10, marginTop:470,   justifyContent:"center"}}>
+           
+            
             <Image style = {{ width:400,height:350, marginTop:-480}}
             resizeMode = "contain" 
             source = {require('./29.png')}/>
 
         <View style ={{flex:1, marginTop:-250}}>
        <Image style = {{ resizeMode: "cover",
-                   height:'50%',
-                   width: '110%',
-                   marginTop:70,
-                   marginRight:-40, marginVertical:-90}} resizeMode = "contain" source = {require('./mae.png')} />
+                   height:'15%',
+                   width: '100%',
+                   marginTop:90,
+                   marginLeft:20, marginVertical:-500}} resizeMode = "contain" source = {require('./mae.png')} />
 
        
-        <View style ={{flex:1, paddingVertical:10, marginTop:-105,marginVertical:-1,   justifyContent:"center"}} >
-           
+        <View style ={{flex:1, paddingVertical:10, marginTop:515,  justifyContent:"center"}} >
+        <Image style = {{ resizeMode: "cover",
+                   height:'15%',
+                   width: '100%',
+                   marginTop:120,
+                   marginLeft:20, marginVertical:-700}} resizeMode = "contain" source = {require('./mae.png')} />
            
             <Button color= "#87cefa"
            onPress={questaoErrada.bind(this)} title="Ana"></Button>
@@ -47,8 +53,7 @@ export default function  Catequese({navigation, route}) {
            
             
             <View style ={{flex:1, marginTop:100, marginVertical:30}}></View>
-            <Text style= {{ fontSize:20}}> Onde Jesus nasceu? </Text>
-
+            
             <Button
             onPress={() => questaoCerta()} title="Gabriel"></Button>
             <Button onPress={questaoErrada.bind(this)} title="Rafael"></Button>
@@ -64,7 +69,57 @@ export default function  Catequese({navigation, route}) {
             <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
             <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
             
-            <View style= {{marginLeft:150, borderRadius:30,paddingBottom:25, marginEnd:10, marginTop:80}}>
+
+            <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+        
+
+        <Button
+        onPress={() => questaoCerta()} title="juazeiro"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="paraiba"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+
+
+        <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+        
+
+        <Button
+        onPress={() => questaoCerta()} title="juazeiro"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="paraiba"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+
+        <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+        
+
+        <Button
+        onPress={() => questaoCerta()} title="juazeiro"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="paraiba"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+
+        
+        <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+        <Button
+        onPress={() => questaoCerta()} title="juazeiro"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="paraiba"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+
+
+        <View style ={{flex:1, marginTop:250, marginVertical:30}}></View>
+        <Button
+        onPress={() => questaoCerta()} title="juazeiro"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="paraiba"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Natal"></Button>
+        <Button onPress={questaoErrada.bind(this)} title="Nazaré"></Button>
+        
+
+
+        
+        
+        
+            <View style= {{position: 'absolute', marginLeft:150, borderRadius:30,paddingBottom:25, marginEnd:10, marginTop:-700}}>
             <Button
             title = "Próximo" 
              onPress = {() => navigation.navigate("Quiz")}/>

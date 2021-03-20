@@ -19,6 +19,7 @@ const slides =[
     },
     {
         key: '2',
+       
         image: require('./1.png')
         
     },
@@ -60,6 +61,8 @@ const slides =[
 ]
 
 export default function OracoesPai ({navigation}) {
+    //AUDIO1
+
     const [sound, setSound] = React.useState();
 
     async function playSound() {
@@ -79,7 +82,161 @@ export default function OracoesPai ({navigation}) {
             sound.unloadAsync(); }
         : undefined;
     }, [sound]);
+
+    //AUDIO2
+
+   
+
+    async function playSom() {
+      console.log('Loading Sound');
+      const { sound } = await Audio.Sound.createAsync(
+         require('./11.mp4')
+      );
+      setSound(sound);
   
+      console.log('Playing Sound');
+      await sound.playAsync(); }
+  
+    React.useEffect(() => {
+      return sound
+        ? () => {
+            console.log('Unloading Sound');
+            sound.unloadAsync(); }
+        : undefined;
+    }, [sound]);
+
+    //AUDIO3
+
+    async function play() {
+        console.log('Loading Sound');
+        const { sound } = await Audio.Sound.createAsync(
+           require('./12.m4a')
+        );
+        setSound(sound);
+    
+        console.log('Playing Sound');
+        await sound.playAsync(); }
+    
+      React.useEffect(() => {
+        return sound
+          ? () => {
+              console.log('Unloading Sound');
+              sound.unloadAsync(); }
+          : undefined;
+      }, [sound]);
+      async function  som() {
+        console.log('Loading Sound');
+        const { sound } = await Audio.Sound.createAsync(
+           require('./13.m4a')
+        );
+        setSound(sound);
+    
+        console.log('Playing Sound');
+        await sound.playAsync(); }
+    
+      React.useEffect(() => {
+        return sound
+          ? () => {
+              console.log('Unloading Sound');
+              sound.unloadAsync(); }
+          : undefined;
+      }, [sound]);
+
+      //AUDIO4
+      async function audio() {
+        console.log('Loading Sound');
+        const { sound } = await Audio.Sound.createAsync(
+           require('./14.mp4')
+        );
+        setSound(sound);
+    
+        console.log('Playing Sound');
+        await sound.playAsync(); }
+    
+      React.useEffect(() => {
+        return sound
+          ? () => {
+              console.log('Unloading Sound');
+              sound.unloadAsync(); }
+          : undefined;
+      }, [sound]);
+
+      //Audio5
+      async function play5() {
+        console.log('Loading Sound');
+        const { sound } = await Audio.Sound.createAsync(
+           require('./15.m4a')
+        );
+        setSound(sound);
+    
+        console.log('Playing Sound');
+        await sound.playAsync(); }
+    
+      React.useEffect(() => {
+        return sound
+          ? () => {
+              console.log('Unloading Sound');
+              sound.unloadAsync(); }
+          : undefined;
+      }, [sound]);
+  // AUDIO6
+  async function play6() {
+    console.log('Loading Sound');
+    const { sound } = await Audio.Sound.createAsync(
+       require('./16.mp4')
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync(); }
+
+  React.useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync(); }
+      : undefined;
+  }, [sound]);
+  //AUDIO7
+
+  async function play7() {
+    console.log('Loading Sound');
+    const { sound } = await Audio.Sound.createAsync(
+       require('./17.mp4')
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync(); }
+
+  React.useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync(); }
+      : undefined;
+  }, [sound]);
+
+  //AUDIO8
+  async function play8() {
+    console.log('Loading Sound');
+    const { sound } = await Audio.Sound.createAsync(
+       require('./18.m4a')
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync(); }
+
+  React.useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync(); }
+      : undefined;
+  }, [sound]);
+
+
 
   
     const [showHome,setShowHome] = useState (false);
@@ -105,14 +262,69 @@ export default function OracoesPai ({navigation}) {
                 {
                     item.key== 2 && (
                         <TouchableOpacity onPress={playSound} 
-                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
-                            <Text style= {{fontSize:25, marginLeft: 45, color:"white"}}> {"Escute"} </Text>
+                        style = {{ marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
                         </TouchableOpacity>
                     )
                         
                     
                 }
-               
+                {
+                    item.key== 3 && (
+                        <TouchableOpacity  onPress={playSom} 
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+                 {
+                    item.key== 4 &&    (
+                        <TouchableOpacity onPress={audio} 
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+                 {
+                    item.key== 5 &&  (
+                        <TouchableOpacity onPress={som} 
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+                 {
+                    item.key== 6 && (
+                        <TouchableOpacity onPress={play5} 
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+                 {
+                    item.key== 7 && (
+                        <TouchableOpacity onPress={play6} 
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+               {
+                    item.key== 8 && (
+                        <TouchableOpacity onPress={play7}
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
+                {
+                    item.key== 9 && (
+                        <TouchableOpacity onPress={play8}
+                        style = {{marginTop:-30, width:200,borderColor:"white",paddingVertical:10, borderRadius:8, borderWidth:5,marginLeft:120, backgroundColor: "#87cefa"}}>
+                            <Text style= {{fontSize:20, marginLeft: 20, color:"white"}}> {"Escute e Repita"} </Text>
+                        </TouchableOpacity>
+                    ) 
+                }
                
 
             </View>
