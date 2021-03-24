@@ -44,8 +44,8 @@ export default function App(){
           
           headerTitle:(
            
-            <Image style = {{ width:300,height:50,marginTop:-30, backgroundColor: '#fff'}}
-            resizeMode = "contain"
+            <Image style = {{  width:140,height:80,marginTop:-3000, backgroundColor: '#fff'}}
+            resizeMode = "cover"
             source = {require('./src/assets/13.png')}
           
             />
@@ -61,7 +61,14 @@ export default function App(){
           title: 'CATEkids',
           headerStyle:{
             backgroundColor: "#87cefa"
-          }
+          },
+          headerTitle:(
+           
+            <Image style = {{  width:140,height:80,marginTop:-3000, backgroundColor: '#fff'}}
+            resizeMode = "cover"
+            source = {require('./src/assets/13.png')}
+          
+            /> )
         }}
         />
         <Stack.Screen name ="Catequese" component = {Catequese}
@@ -75,7 +82,7 @@ export default function App(){
         />
          <Stack.Screen name ="Quiz" component = {Quiz}
          options = {{
-          title: 'QUIZ',
+          title: 'CATEkids',
           headerStyle:{
             backgroundColor: "#87cefa"
           }
@@ -158,7 +165,7 @@ export default function App(){
          <Stack.Screen name ="Nascimento" component = {Nascimento}
         
         options = {{
-          title: 'Cate',
+          title: 'CATEkids',
           headerStyle:{
             backgroundColor: "#87cefa"
           }
@@ -167,7 +174,7 @@ export default function App(){
          <Stack.Screen name ="OracoesPai" component = {OracoesPai}
         
         options = {{
-          title: 'Cate',
+          title: 'CATEkids',
           headerStyle:{
             backgroundColor: "#87cefa"
           }

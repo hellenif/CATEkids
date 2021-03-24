@@ -13,8 +13,8 @@ export default function  Home({navigation}) {
             
            
             
-            <View  >
-            <FlatButton style= {{width:40}} text = 'ORAÇÕES'
+            <View   >
+            <FlatButton style= {{width:40, marginTop:100}} text = 'ORAÇÕES'
             onPress ={() => navigation.navigate("Sobre")} /> 
              <FlatButton text = "CATEQUESE"
             onPress ={() => navigation.navigate("Cate")} /> 
